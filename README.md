@@ -5,6 +5,7 @@
 This is a very quick and dirty unofficial API implementation for Energy Australia.
 
 Warnings:
+
     - Incorrect username/password combination causes 1 hr lockouts.
     - This may break tomorrow. Working as of 2020-05-16
 
@@ -20,13 +21,13 @@ Energy Australia provides daily energy usage, price and minimum, maximum tempera
 This daily information is provided in a list with each day represented as a dictionary. The following keys are available for each day. 
 
     - "nmi"                     Unique identifier?
-    - "consumption"             Energy consumption
-    - "estimatedConsumption"    Always None
+    - "consumption"             Energy consumption (kWh)
+    - "estimatedConsumption"    Always None?
     - "readDate"                Date
     - "prevDate"                Same as above
-    - "interval"                Always 0
-    - "cost"                    Cost of consumed electricty
-    - "minTemp"                 Temperature in your location (or city?) not sure on accuracy.
+    - "interval"                Always 0?
+    - "cost"                    Cost of consumed electricity ($)
+    - "minTemp"                 Temperature in your city/location? Not sure on accuracy?
     - "maxTemp"                 Same as above
 
 # Usage
@@ -56,3 +57,8 @@ This is a very quick and dirty implementation with very limited error checking.
 
 Pull requests welcome.
 
+
+
+# Licence
+
+MIT
